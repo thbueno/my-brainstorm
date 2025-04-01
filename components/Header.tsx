@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import AgentPulse from "./AgentPulse";
 
 function Header() {
   return (
@@ -8,8 +9,11 @@ function Header() {
       <div>
         {/* Left side */}
         <div>
-          <Link href="/">
-            <h1>My brainstorm</h1>
+          <Link href="/" className="flex items-center gap-4">
+            <AgentPulse size="small" color="blue" />
+            <h1 className="text-xl font-semibold bg-gradient-to-r from-blue-600 to-blue-400 bg-clip-text text-transparent">
+              My brainstorm
+            </h1>
           </Link>
         </div>
         {/* Right side */}
