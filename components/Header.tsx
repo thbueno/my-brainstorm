@@ -1,6 +1,7 @@
 "use client";
 
-import { SignedIn } from "@clerk/nextjs";
+import { Button } from "@/components/ui/button";
+import { SignedIn, UserButton } from "@clerk/nextjs";
 import Link from "next/link";
 import AgentPulse from "./AgentPulse";
 
@@ -20,7 +21,13 @@ function Header() {
         {/* Right side */}
         <div>
           <SignedIn>
-            <Link href="/manage-plan">Manage Plan</Link>
+            <Link href="/manage-plan">
+              <Button>Manage Plan</Button>
+            </Link>
+
+            <div className="p-2 w-10 h-10 flex items-center justify-center rounded-full border bg-blue-100 border-blue-200">
+              <UserButton />
+            </div>
           </SignedIn>
         </div>
       </div>
