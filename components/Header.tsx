@@ -1,5 +1,6 @@
 "use client";
 
+import { SignedIn } from "@clerk/nextjs";
 import Link from "next/link";
 import AgentPulse from "./AgentPulse";
 
@@ -17,7 +18,11 @@ function Header() {
           </Link>
         </div>
         {/* Right side */}
-        <div></div>
+        <div>
+          <SignedIn>
+            <Link href="/manage-plan">Manage Plan</Link>
+          </SignedIn>
+        </div>
       </div>
     </header>
   );
