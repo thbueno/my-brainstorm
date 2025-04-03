@@ -101,7 +101,7 @@ export default function Home() {
 
       {/* Features section */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-8xl sm:px-10">
+        <div className="container mx-auto max-w-8xl px-10 sm:px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
             Powerful Features for Content Creators
           </h2>
@@ -134,15 +134,41 @@ export default function Home() {
 
       {/* How it works section  */}
       <section className="py-20 bg-gray-50">
-        <div className="container mx-auto max-w-8xl">
+        <div className="container mx-auto max-w-8xl px-10 sm:px-6">
           <h2 className="text-3xl font-bold text-center mb-12">
             Meet your your personal AI Brainstorm agent in 3 easy steps
           </h2>
-          <div></div>
+          <div className="grid md:grid-cols-3 gap-8">
+            {steps.map((step, index) => {
+              const Icon = step.icon;
+              return (
+                <div
+                  key={index}
+                  className="text-center p-6 rounded-xl bg-white shadow-md hover:shadow-lg transition-all"
+                >
+                  <div className="w-16 h-16 bg-gradient-to-r from-blue-600 to-blue-400 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <Icon className="w-8 h-8 text-white" />
+                  </div>
+                  <h3 className="text-xl font-semibold mb-2">{step.title}</h3>
+                  <p className="text-gray-600">{step.description}</p>
+                </div>
+              );
+            })}
+          </div>
         </div>
       </section>
 
       {/* Footer section */}
+      <section className="py-20 px-10 md:px-6 bg-gradient-to-r from-blue-600 to-blue-400">
+        <div className="text-center">
+          <h2 className="text-3xl font-bold text-white mb-6">
+            Ready to Meet Your AI Content Agent?
+          </h2>
+          <p className="text-xl text-blue-50">
+            Join creators leveraging AI to unlock content insights
+          </p>
+        </div>
+      </section>
     </div>
   );
 }
