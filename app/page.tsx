@@ -24,6 +24,15 @@ export default function Home() {
       </section>
 
       {/* Features section */}
+      <section className="py-20 bg-white">
+        <div className="container mx-auto px-4 max-w-6xl">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Powerful Features for Content Creators
+          </h2>
+
+          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"></div>
+        </div>
+      </section>
 
       {/* How it works section  */}
 
