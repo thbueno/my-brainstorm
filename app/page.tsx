@@ -101,7 +101,7 @@ export default function Home() {
 
       {/* Features section */}
       <section className="py-20 bg-white">
-        <div className="container mx-auto px-4 max-w-8xl sm:px-32">
+        <div className="container mx-auto px-4 max-w-8xl sm:px-10">
           <h2 className="text-3xl font-bold text-center mb-12">
             Powerful Features for Content Creators
           </h2>
@@ -133,6 +133,14 @@ export default function Home() {
       </section>
 
       {/* How it works section  */}
+      <section className="py-20 bg-gray-50">
+        <div className="container mx-auto max-w-8xl">
+          <h2 className="text-3xl font-bold text-center mb-12">
+            Meet your your personal AI Brainstorm agent in 3 easy steps
+          </h2>
+          <div></div>
+        </div>
+      </section>
 
       {/* Footer section */}
     </div>
