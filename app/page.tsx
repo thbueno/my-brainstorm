@@ -1,4 +1,5 @@
 import AgentPulse from "@/components/AgentPulse";
+import YoutubeVideoForm from "@/components/YoutubeVideoForm";
 import {
   Brain,
   Image as ImageIcon,
@@ -95,6 +96,8 @@ export default function Home() {
               Transform your video content with AI-powered analysis,
               transcription, and insights. Get started in seconds.
             </p>
+
+            <YoutubeVideoForm />
           </div>
         </div>
       </section>
