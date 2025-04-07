@@ -7,9 +7,15 @@ export default function ClientWrapper({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  const schematicPubKey = process.env.NEXT_PUBLIC_SCHEMATIC_PUBLISHABLE_KEY;
+  if (!schematicPubKey) {
+    throw new Error(
+      "No Schematic Publishable Key found. Please add it to your .env.local file."
+    );
+  }
   return (
     <ClerkProvider>
-      <SchematicProvider>{children}</SchematicProvider>
+      <SchematicProvider publishableKey="">{children}</SchematicProvider>
     </ClerkProvider>
   );
 }
