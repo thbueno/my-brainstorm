@@ -1,7 +1,7 @@
 "use client";
 
-function SchematicWrapped() {
-  return <div>SchematicWrapped</div>;
-}
+const SchematicWrapped = ({ children }: { children: React.ReactNode }) => {
+  return <>{children}</>;
+};
 
 export default SchematicWrapped;
