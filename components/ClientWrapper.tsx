@@ -15,7 +15,9 @@ export default function ClientWrapper({
   }
   return (
     <ClerkProvider>
-      <SchematicProvider publishableKey="">{children}</SchematicProvider>
+      <SchematicProvider publishableKey={schematicPubKey}>
+        {children}
+      </SchematicProvider>
     </ClerkProvider>
   );
 }
