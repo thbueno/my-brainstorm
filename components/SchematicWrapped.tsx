@@ -1,3 +1,5 @@
+"use client";
+
 function SchematicWrapped() {
   return <div>SchematicWrapped</div>;
 }
