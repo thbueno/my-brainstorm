@@ -79,7 +79,7 @@ const steps = [
 
 export default function Home() {
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen font">
       {/* Hero section */}
       <section className="py-20 bg-gradient-to-b from-white to-blue-50">
         <div className="container mx-auto px-4">
