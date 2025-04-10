@@ -1,8 +1,17 @@
 import ClientWrapper from "@/components/ClientWrapper";
 import Header from "@/components/Header";
 import type { Metadata } from "next";
-import { Geist, Geist_Mono, Onest } from "next/font/google";
+import { Geist, Geist_Mono, Inter, Onest } from "next/font/google";
 import "./globals.css";
+
+const inter = Inter({
+  variable: "--font-inter",
+  subsets: ["latin"],
+  display: "swap",
+  weight: ["400", "500", "600", "700"],
+  style: ["normal"],
+  preload: true,
+});
 
 const onest = Onest({
   variable: "--font-onest",
@@ -36,7 +45,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${onest.variable} ${onest.variable} font-sans antialiased`}
+        className={`${inter.variable} ${inter.variable} font-sans antialiased tracking-tight`}
       >
         <ClientWrapper>
           <Header />
