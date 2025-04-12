@@ -1,5 +1,5 @@
 function AnalysisPage() {
-  return <div>page</div>;
+  return <div>Analysis Page</div>;
 }
 
 export default AnalysisPage;
