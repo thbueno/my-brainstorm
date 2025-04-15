@@ -1,3 +1,4 @@
+"use client";
 function Usage() {
   return <div>Usage</div>;
 }
