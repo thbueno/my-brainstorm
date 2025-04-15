@@ -7,7 +7,7 @@ export enum FeatureFlag {
 }
 export const featureFlagEvents: Record<FeatureFlag, { event: string }> = {
   [FeatureFlag.TRANSCRIPTION]: {
-    event: "transcribe2",
+    event: "transcribe",
   },
   [FeatureFlag.IMAGE_GENERATION]: {
     event: "generate-image",
